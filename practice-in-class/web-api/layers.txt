@@ -1,0 +1,15 @@
+N-Layers
+
+src -all source code
+  - entities - object mappings
+  - factories - instance generators
+  - repositories - data access
+  - routes - endpoint mappings
+  - services - communication between routes and repositories layer (business logic layer)
+  - util - shared code
+  - handler - communication between routes and server
+  - index - instance of our server
+
+tests -> all automated test suites
+ - integration tests - testing on the user point of view. it's also an E2E test because there's no app cosuming it
+ - unit tests - all tests the mus run without any external connections such as databasesm, external APIs and fileSystem
